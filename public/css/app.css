@@ -1,0 +1,61 @@
+:root {
+    --amarillo: #EAC926;
+    --azul: 03264C;
+    --celeste: #1259c3;
+    --gris-oscuro: #666;
+    --gris-claro: #ebebeb;
+    --verde: #39b54a;
+
+    --black: #000000;
+    --white: #ffffff;
+
+    --font-family: 'Roboto', sans-serif;
+    --size-cuerpo: 12px;
+    --size-titulares: 24px;
+    --size-precios: 18px;
+    --size-descuentos: 16px;
+    --size-descripcion: 16px;
+}
+
+body {
+    background-color: var(--amarillo);
+    display: flex;
+    flex-direction: column;
+    font-family: var(--font-family);
+    height: auto;
+    width: 100%;
+}
+.title_1 {
+    align-items: center;
+}
+ul {
+    list-style-type: none;
+    padding: 0 0 0 0;
+}
+
+.link {
+    color: var(--black);
+    text-decoration: none;
+}
+ 
+.burger-menu {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+.burger-menu i {
+    background-color: var(--celeste);
+    border-radius: 10%;
+    color: #fff; /* Color blanco del ícono */
+    cursor: pointer;
+    font-size: 2em; /* Tamaño del ícono */
+    padding: 2%;
+}
+
+img {
+    max-width: 90%;
+}
+  
+  
+  
+  
