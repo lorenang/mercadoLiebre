@@ -6,8 +6,10 @@
     --gris-claro: #ebebeb;
     --verde: #39b54a;
 
-    --black: #000000;
-    --white: #ffffff;
+    --black: #000;
+    --white: #fff;
+
+    --background-btn: #0044AA;
 
     --font-family: 'Roboto', sans-serif;
     --size-cuerpo: 12px;
@@ -17,45 +19,122 @@
     --size-descripcion: 16px;
 }
 
-body {
-    background-color: var(--amarillo);
-    display: flex;
-    flex-direction: column;
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+body{
     font-family: var(--font-family);
-    height: auto;
+    background-color: var(--gris-claro);
+}
+
+/*header*/
+header{
+    background-color: var(--amarillo);
+}
+
+div.top-header{
+    padding: 5%;
+}
+header div.logo{
+    padding: 10px;
+    width: 50%;
+}
+header .form .input{
+    background-color: var(--white);
+    border: 1px solid var(--black);
+    outline: none;
+    color: var(--gris-oscuro);
+    padding: 2px;
+}
+header .form .submit{
+    background-color: var(--white);
+    border: 1px solid var(--back);
+    color: var(--gris-oscuro);
+    width: 10%;
+}
+
+header div.top-header p{
+    width: 100%;
+    text-align: center;
+    margin-top: 10px;
+}
+p{
+    font-size: 12px;
+}
+h3{
+    font-size: 24px;
+}
+
+header nav{
+    font-size: 12px;
+}
+header ul li{
+    list-style-type: none;
+}
+header ul li a{
+    color: var(--black);
+    text-decoration: none; 
+}
+
+
+
+div.burger-menu{
+    text-align: center;
+}
+div.burger-menu i{
+    background-color: var(--background-btn);
+    border-radius: 5px;
+    color: var(--white);
+    font-size: 20px;
+    height: 40px;
+    margin: 10px 0px 20px 0px;
+    padding: 10px;
+    width: 40px;
+}
+
+section.banner img{
     width: 100%;
 }
-.title_1 {
-    align-items: center;
-}
-ul {
-    list-style-type: none;
-    padding: 0 0 0 0;
-}
 
-.link {
-    color: var(--black);
-    text-decoration: none;
-}
- 
-.burger-menu {
-    align-items: center;
+main{
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    margin: 5%;
+    width: 90%;
 }
-.burger-menu i {
-    background-color: var(--celeste);
-    border-radius: 10%;
-    color: #fff; /* Color blanco del ícono */
-    cursor: pointer;
-    font-size: 2em; /* Tamaño del ícono */
-    padding: 2%;
+main section article{
+    background-color: var(--white);
+}
+main section article img{
+    width: 100%;
+}
+main section article i,
+.discount{
+    color: var(--verde);
+}
+article div.main-article{
+    width: 100%;
+}
+.price{
+    font-size: 18px;
+}
+.discount,
+.description{
+    font-size: 16px;
+    font-weight: normal;
+}
+h3,
+.description{
+    color: var(--gris-oscuro);
 }
 
-img {
-    max-width: 90%;
-}
-  
+
+
+
+
+
   
   
   
